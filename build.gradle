@@ -1,0 +1,17 @@
+group = 'com.mj.miniordersystem'
+version = '1.0.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+subprojects {
+    apply plugin: 'java'
+
+    group = 'com.mj.miniordersystem'
+    version = '1.0.0-SNAPSHOT'
+
+    repositories {
+        mavenCentral()
+    }
+}
