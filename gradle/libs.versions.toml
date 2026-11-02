@@ -1,0 +1,6 @@
+[libraries]
+spring-boot-web = {
+    group = "org.springframework.boot",
+    name = "spring-boot-starter-web",
+    version = "4.1.1"
+}
