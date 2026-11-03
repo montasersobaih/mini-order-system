@@ -1,17 +1,26 @@
-group = 'com.mj.miniordersystem'
-version = '1.0.0-SNAPSHOT'
+allprojects {
+    group = 'com.mj.miniordersystem'
+    // version = '1.0.0-SNAPSHOT'
 
-repositories {
-    mavenCentral()
+    repositories {
+        mavenCentral()
+    }
 }
 
 subprojects {
     apply plugin: 'java'
 
-    group = 'com.mj.miniordersystem'
-    version = '1.0.0-SNAPSHOT'
+    java {
+        toolchain {
+            languageVersion = JavaLanguageVersion.of(17)
+        }
+    }
 
-    repositories {
-        mavenCentral()
+    dependencies {
+        testImplementation libs.spring.boot.starter.test
+    }
+
+    test {
+        useJUnitPlatform()
     }
 }
