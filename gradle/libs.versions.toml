@@ -7,7 +7,7 @@ dotenv-version = "5.1.0"
 postgres-version = "42.7.10"
 
 [libraries]
-spring-boot-starter-ms = { group = "com.mj.spring.boot", name = "spring-boot-starter-mircroservic", version.ref = "spring-boot-core-version" }
+spring-boot-starter-ms = { group = "com.mj.spring.boot", name = "spring-boot-starter-microservice", version.ref = "spring-boot-core-version" }
 
 # spring 7 dependencies
 spring-transaction = { group = "org.springframework", name = "spring-tx", version.ref = "spring-version" }
