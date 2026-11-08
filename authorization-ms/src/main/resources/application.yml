@@ -1,0 +1,8 @@
+server:
+  port: 8000
+spring:
+  application:
+    name: authorization-ms
+logging:
+  level:
+    root: error

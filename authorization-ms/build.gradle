@@ -1,0 +1,19 @@
+plugins {
+    id 'org.springframework.boot' version '4.1.2'
+    id 'io.spring.dependency-management' version '1.1.7'
+}
+
+description = 'authorization-ms'
+version = '0.0.1-SNAPSHOT'
+
+dependencies {
+    implementation libs.spring.boot.starter.ms
+
+    implementation libs.spring.boot.starter.webmvc
+    implementation libs.spring.boot.starter.security
+    implementation libs.spring.boot.starter.actuator
+
+    testImplementation libs.spring.boot.starter.webmvc.test
+    testImplementation libs.spring.boot.starter.security.test
+    testImplementation libs.spring.boot.starter.actuator.test
+}
